@@ -1,0 +1,393 @@
+:root {
+  --color-accent: rgb(0, 0, 0);
+  --background-blue: rgb(53, 121, 140);
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+.App {
+  background-image: linear-gradient(to bottom, var(--background-blue), rgb(255, 255, 255), var(--background-blue));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.App-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  padding: 2em 3em;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 80px;
+  display: flex;
+}
+
+.name {
+  font-family: 'Questrial', sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+}
+
+.center-text {
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.center-text p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 99px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0;
+  word-break: break-word;
+  text-transform: uppercase; /* Ensure the center text is uppercase */
+}
+
+.get-started {
+  display: inline-flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-top: 60px;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 180px;
+  height: 45px;
+  color: var(--background-blue);
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none; /* Remove underline */
+}
+
+.get-started:hover {
+  background-color: var(--background-blue);
+  color: #FFFFFF;
+}
+
+.templates-heading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.templates-heading h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 44px;
+  color: #FFFFFF;
+  text-transform: uppercase; /* Ensure the heading text is uppercase */
+}
+
+a, p {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: 'Questrial', sans-serif;
+  font-size: 12px;
+}
+
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.image-slider {
+  display: flex;
+  margin-top: 100px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-image {
+  height: 300px;
+  margin: 0 10px;
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.portfolio-info {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.portfolio-info h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 36px;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  text-transform: uppercase; /* Ensure the portfolio info heading is uppercase */
+}
+
+.portfolio-info p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+
+.why-portfolio {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.why-portfolio h3 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 44px;
+  color: var(--background-blue);
+  margin-bottom: 60px;
+  text-transform: uppercase; /* Ensure the why portfolio heading is uppercase */
+}
+
+.why-portfolio-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.reason {
+  flex: 1 1 calc(33% - 40px);
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reason strong {
+  display: block;
+  font-family: 'Questrial', sans-serif;
+  font-size: 26px;
+  color: var(--background-blue);
+  margin-bottom: 20px;
+}
+
+.reason p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+.pricing-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 40px;
+  margin-top: 100px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.pricing-card h3 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 44px;
+  margin-bottom: 60px;
+  text-transform: uppercase; /* Ensure the pricing card heading is uppercase */
+}
+
+.pricing-card .heading-line, .pricing-card .price-line {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 40px 0;
+}
+
+.pricing-card .price {
+  font-family: 'Questrial', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.pricing-card .price2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+  margin: 40px 0;
+}
+
+.pricing-card h4 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 24px;
+  margin-top: 40px;
+  font-weight: lighter;
+}
+
+.pricing-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin: 40px 0;
+}
+
+.pricing-card li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pricing-card .buy-now {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 180px;
+  height: 45px;
+  color: #FFFFFF;
+  background-color: var(--background-blue);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pricing-card .buy-now:hover {
+  background-color: #FFFFFF;
+  color: var(--background-blue);
+  border: 2px solid var(--background-blue);
+}
+
+.logo-below-pricing {
+  margin-top: 20px;
+  height: 80px; /* Adjust the height as needed */
+}
+
+.App-footer {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  color: #FFFFFF;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column; /* Center the whole footer content */
+  align-items: center;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 20px; /* Space between the buttons */
+  margin-top: 20px; /* Space between the text and buttons */
+}
+
+.footer-button {
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  background: none; /* Remove background */
+}
+
+.footer-button:hover {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+      padding: 1em;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .logo {
+      height: 30px;
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .name {
+      font-size: 16px;
+  }
+
+  .center-text p {
+      font-size: 50px;
+  }
+
+  .get-started {
+      font-size: 14px;
+      width: 150px;
+      height: 40px;
+  }
+
+  .slider-image {
+      height: 150px;
+  }
+
+  .why-portfolio-reasons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .reason {
+      flex: 1 1 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+  }
+
+  .footer-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-button {
+      margin-bottom: 10px; /* Space between buttons in vertical layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+      padding: 0.5em;
+  }
+
+  .logo {
+      height: 25px;
+  }
+
+  .name {
+      font-size: 14px;
+  }
+
+  .center-text p {
+      font-size: 40px;
+  }
+
+  .get-started {
+      font-size: 12px;
+      width: 130px;
+      height: 35px;
+  }
+
+  .slider-image {
+      height: 100px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
